@@ -1,0 +1,71 @@
+<html lang="en">
+    <head>
+        <title> Booking Form </title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', path='styles1.css') }}">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+        
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="container-time">
+                <h2 class="heading"> Time Open </h2>
+                <h3 class="heading-days"> Monday-Sunday </h3>
+                <p> 8am - 10pm </p>
+                <p> 10am - 10pm (sunday) </p>
+
+                <hr>
+
+                <h4 class="heading-phone"> Call Us: 8-(708)-830-27-86 </h4>
+
+
+            </div>
+
+            <div class="container-form">
+                <form id="form1">
+                    <h2 class="heading heading-blue"> Booking Online </h2>
+                    <div class="form-field">
+                        <p> Your Name </p>
+                        <input type="text" placeholder="Your Name" name="FirstName">
+                    </div>
+                    <div class="form-field">
+                        <p> Your number </p>
+                        <input type="number" placeholder="Your Number" name="Number">
+                    </div>
+                    <div class="form-field">
+                        <p> Date </p>
+                        <input type="date" id="datepicker" name="Date">
+                    </div>
+                    <div class="form-field">
+                        <p> Time </p>
+                        <input type="time" name="Time">
+                    </div>
+                    <div class="form-field">
+                        <p> Procedure </p>
+                        <select name="select" id="#" name="Procedure">
+                            <option value="1"> hair-cut </option>
+                            <option value="2"> hair-style </option>
+                            <option value="3"> nails </option>
+                            <option value="4"> makeup for a night </option>
+                            <option value="5"> makeup </option>
+                        </select>
+                    </div>
+
+                    <button class="btn"> Submit </button>
+                </form>
+
+            </div>
+        </div>
+
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+        <script>
+          flatpickr("#datepicker", {
+            locale: "en" 
+          });
+        </script>
+
+    </body>
+</html>

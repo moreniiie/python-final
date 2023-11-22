@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width", initial-scale="1.0">
+        <title> Beauty Salon </title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', path='styles.css') }}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-r3udL1+nvA2Ud4q9dz7R33rLNayOb8BzJzdu5Yjte7Y4P00CDQ7XxMFa/zYPbpJj" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        
+
+    </head>
+   <body>
+    <section class="header">
+        <nav>
+            <a href="{{ url_for('static', path='form.html') }}"><img src="{{ url_for('static', path='images/beauty-high-resolution-logo-white-transparent.png') }} "> 
+            </a>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                 <li> <a href=""> HOME </a></li>
+                 <li> <a href="#1page"> ABOUT </a></li>    
+                 <li> <a href="#2page"> SERVICE </a></li> 
+                 <li> <a href="#3page"> TIP </a></li> 
+                 <li> <a href="#4page"> CONTACT </a></li> 
+                </ul>
+            </div>
+    
+        </nav>
+
+
+        <div class="text-box">
+            <h1>“Beauty is about enhancing what you have. Let yourself shine through.” —Janelle Monae</h1>
+            <br><br>
+            <a href="form.html" class="hero-btn"> Visit Us To Know More </a>
+        </div>
+
+    </section>
+
+    <section class="serv" id="2page">
+        <h1> Services We Offer </h1>
+        <br><br>
+        <p> Welcome to "ButterFly salon". We believe that everyone deserves the chance to pamper themselves and feel gorgerous, and this is why we provide a lot of services without the premium price tag. Whether you're looking for a hair, nails and makeup procedures, we're here to help make you feel even more confident and let your inner beauty shine through. </p>
+
+        <div class="row">
+            <div class="serv-col">
+                <h3> Hair </h3>
+                
+                <p1> ButterFly Beauty Salon is glad to provide you with high-quality hair care services from the masters of their craft. Our main goal is not just to surprise our guests, but also to show them how much the hairstyle affects their image. </p1>
+            </div>
+            <div class="serv-col">
+                <h3> Nails </h3>
+                
+                <p1> Sakura Beauty Studio is pleased to offer you a wide range of nail services. You can get nail care services, finger, nail, hand treatment from us. Various types of manicure and pedicure: Classic, hardware, SPA. Our masters have experience up to 14 years.</p1>
+            </div>
+            <div class="serv-col">
+                <h3> Makeup </h3>
+                
+                <p1> The best makeup artists in Astana work in our salon. They are always ready to make you a Make up for any occasion. We can easily make you a high-quality wedding makeup, evening makeup, daytime or business makeup.</p1>
+            </div>
+        </div>
+    </section>
+
+    <section class="tip" id="1page">
+        <h1> Beauty Zone </h1>
+        <br><br>
+        <p> Our Beauty Salon Butterly is also well-known for popular k-pop idol Wonyoung, who is a face of "Butterfly". </p>
+
+        <div class="row">
+            <div class="tip-col">
+                <img src="{{ url_for('static', path='images/cfea924e79dee6298ff6a0a35bdb09c3.jpg') }} ">
+            </div>
+            <div class="tip-col">
+                <img src="{{ url_for('static', path='images/d4a771a196e6028227689fb09797e9fb.jpg') }} ">
+            </div>
+            <div class="tip-col">
+                <img src="{{ url_for('static', path='images/cc4458cf618e77d139ece6d3879c2cae.jpg') }} ">
+            </div>
+        </div>
+    </section>
+
+    <section class="adv" id="3page">
+        <h1> Our Tips </h1>
+        <p> There are you can find some tips for yourself ! </p>
+
+        <div class="row">
+            <div class="adv-col">
+                <img src="{{ url_for('static', path='images/5c6e107719a3be7188b94d7a4b61d4f3.jpg') }} " >
+            </div>
+            <div class="adv-col">
+                <img src="{{ url_for('static', path='images/09a2ac9e327644296453e10d213ae83b.jpg') }} " >
+            </div>
+            <div class="adv-col">
+                <img src="{{ url_for('static', path='images/5f794311cc24e658e3d796a9d873f278.jpg') }} ">
+            </div>
+        </div>
+    </section>
+
+   
+
+    <section class="cta">
+        <h1> We show your skin, hair, and body the care and attention they deserve. </h1>
+        <a href="" class="hero-btn"> CONTACT US</a>
+
+    </section>
+
+    <section class="footer" id="4page">
+        <h3> Our Sources </h3>
+        <p> Here you can find our social medias and more information about us ! </p>
+
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+
+    </section>
+
+    <script>
+
+        var navlinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+    <script src="https://kit.fontawesome.com/8487b6de89.js" crossorigin="anonymous"></script>
+   </body>
+   </html>
